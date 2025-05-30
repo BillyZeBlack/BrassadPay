@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrassardPay – Payez sans effort à moto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>BrassardPay</h1>
+    <p>Le brassard de paiement pour motards : étanche, sécurisé, sans effort.</p>
+    <button class="cta" onclick="scrollToPreorder()">Précommandez maintenant - Offre de lancement</button>
+  </header>
+
+  <section class="features">
+    <h2>Pourquoi BrassardPay ?</h2>
+    <ul class="feature-list">
+      <li>✅ Paiement rapide sans retirer vos gants</li>
+      <li>✅ Idéal pour péages et stations-service</li>
+      <li>✅ Étanche et protégé contre les interférences NFC</li>
+    </ul>
+  </section>
+
+  <section class="how">
+    <h2>Comment ça marche ?</h2>
+    <p>Insérez votre carte dans le compartiment NFC sécurisé. Enfilez le brassard. Payez sans contact comme avec une CB classique. Ultra simple.</p>
+
+   <!--  <div class="carousel-buttons">
+      <button onclick="scrollCarousel(-1)">⬅️</button>
+      <button onclick="scrollCarousel(1)">➡️</button>
+    </div> -->
+
+    <div class="carousel-container">
+      <div class="carousel" id="carousel">
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=300&h=200" alt="Étape 1 : Insérez la carte">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=300&h=200" alt="Étape 2 : Enfilez le brassard">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=300&h=200" alt="Étape 3 : Payez sans contact">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=300&h=200" alt="Étape 3 : Payez sans contact">
+        </div>
+        <div class="carousel-item">
+          <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Ils l'ont testé</h2>
+    <div class="testimonial">“Depuis que j’ai BrassardPay, plus besoin de galérer aux péages.” – Alex, motard quotidien</div>
+    <div class="testimonial">“Idée de génie. Surtout sous la pluie.” – Claire, rideuse depuis 10 ans</div>
+  </section>
+
+  <section class="faq">
+    <h2>FAQ</h2>
+    <ul class="faq-list">
+      <li><strong>Est-ce compatible avec toutes les cartes ?</strong> Oui, toutes les cartes NFC sont compatibles.</li>
+      <li><strong>Est-ce sécurisé ?</strong> Oui, le compartiment bloque les ondes quand vous ne payez pas.</li>
+      <li><strong>Peut-on laver le brassard ?</strong> Oui, il est étanche et lavable.</li>
+    </ul>
+  </section>
+
+  <section class="preorder" id="preorder">
+    <h2>Précommandez maintenant</h2>
+    <p>Recevez BrassardPay en avant-première avec une réduction spéciale. Inscrivez votre e-mail :</p>
+    <form onsubmit="submitPreorder(event)">
+      <input type="email" id="email" placeholder="Votre e-mail" required>
+      <button class="cta" type="submit">Je précommande</button>
+    </form>
+    <p id="confirmation" style="display:none; color:green; margin-top:1rem;">Merci ! Nous vous recontacterons très vite. 🧡</p>
+  </section>
+
+  <footer>
+    <p>Suivez-nous sur Instagram | Contact : hello@brassardpay.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
