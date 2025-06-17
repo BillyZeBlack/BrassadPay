@@ -1,17 +1,8 @@
-function scrollToPreorder() {
-  document.getElementById("preorder").scrollIntoView({ behavior: "smooth" });
-}
-
-function submitPreorder(event) {
+function submitForm(event) {
   event.preventDefault();
   const email = document.getElementById("email").value;
   if (email) {
-    document.getElementById("confirmation").style.display = "block";
+    document.getElementById("confirmation").innerText = "🔥 Merci ! Tu es sur la liste. Stay tuned.";
+    document.getElementById("email").value = "";
   }
-}
-
-const carousel = document.getElementById("carousel");
-function scrollCarousel(direction) {
-  const scrollAmount = 310;
-  carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
